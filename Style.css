@@ -1,0 +1,242 @@
+/* ChatGPT was used to simplify the code, I had redundant code everywhere,
+I also asked for it to add comments to seperate sections of code. All of the code
+is mine, It was only asked to simplify and seperate.*/
+
+/*========================================
+  Root Variables (Light Theme)
+=========================================*/
+:root {
+	--bg-primary: #f4f6f8;
+	--bg-secondary: #fff;
+	--text-primary: #333;
+	--color-primary: #c284d2;
+	--color-accent: #eaf3fc;
+	--color-hover: #a6a6d9;
+	--shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*========================================
+  Dark Theme Overrides
+=========================================*/
+body.dark-theme {
+	--bg-primary: #1a1a1a;
+	--bg-secondary: #2d2d2d;
+	--text-primary: #e0e0e0;
+	--color-primary: #6262bc;
+	--color-accent: #3a3a3a;
+	--color-hover: #d1a2dd;
+}
+
+/*========================================
+  Global Resets & Base Styles
+=========================================*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Segoe UI', sans-serif;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	line-height: 1.6;
+	padding: 2rem;
+}
+
+img {
+	padding: 1rem;
+}
+
+/*========================================
+  Theme Toggle Button
+=========================================*/
+.theme-toggle {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background: var(--color-primary);
+	color: var(--text-primary);
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+	background: var(--color-hover);
+}
+
+/*========================================
+  Header & Footer
+=========================================*/
+header,
+footer {
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--text-primary);
+	padding: 2rem;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+}
+
+header h1 {
+	font-size: 2rem;
+}
+
+.tagline {
+	font-style: italic;
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+}
+
+/*========================================
+  Navigation
+=========================================*/
+nav ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+	gap: 1.5rem;
+	margin: 1rem 0 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--color-primary);
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: var(--color-hover);
+	text-decoration: underline;
+}
+
+/*========================================
+  Main Layout & Containers
+=========================================*/
+.skip-link {
+	color: var(--color-primary);
+}
+
+main,
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 1rem;
+}
+
+/*========================================
+  Sections (Shared Styles)
+=========================================*/
+.section-box {
+	background-color: var(--bg-secondary);
+	padding: 1.5rem;
+	margin-bottom: 2rem;
+	border-left: 5px solid var(--color-primary);
+	border-radius: 5px;
+}
+
+/*========================================
+  Index Section
+=========================================*/
+.index-text p {
+	margin-bottom: 1rem;
+}
+
+/*========================================
+  Interests Aside
+=========================================*/
+aside.interests {
+	background-color: var(--color-accent);
+	padding: 1rem;
+	margin-top: 1rem;
+	border-left: 4px solid var(--color-primary);
+	border-radius: 4px;
+}
+
+aside.interests ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+aside.interests li {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+/*========================================
+  Tables
+=========================================*/
+table,
+th,
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 8px;
+}
+
+/*========================================
+  Details Dropdown
+=========================================*/
+details {
+	margin-top: 1rem;
+	padding: 0.5rem;
+	background-color: #f0f8ff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+details summary {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/*========================================
+  Headings
+=========================================*/
+h2,
+h3 {
+	color: var(--color-primary);
+	margin-bottom: 1rem;
+}
+
+/*========================================
+  Responsive Styles
+=========================================*/
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.theme-toggle {
+		position: static;
+		margin: 1rem;
+	}
+}
+
+/*========================================
+  Print Styles
+=========================================*/
+@media print {
+	.theme-toggle {
+		display: none;
+	}
+
+	body {
+		background: white;
+		color: black;
+	}
+}

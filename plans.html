@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CSC210 - Intro to Web Presentation and Development">
+	<meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+
+	<!-- The OG here means Open Graph, which tags control for social media channels. -->
+	<meta property="og:title" content="CSC210 - Intro to Web Presentation and Development">
+	<meta property="ogLdescription"
+		content="This could be your personal portfolio to showvace your web dev and project skills">
+	<meta property="og:type" content="website">
+
+	<!-- fav icon goes here -->
+	<link rel="icon" type="image/svg+xml"
+		href="data:image/svg+xml, <svg xmlns='httpL//www.w3.org/2000/svg' viewBox='0 0 100 100>">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Neumont CSC210 - Intro to Web Presentation and Development</title>
+</head>
+
+<body>
+	<a href="index.html" class="skip-link">Skip to main content</a>
+
+	<!--HTML5 semantic header-->
+	<header role="banner">
+		<button class="theme-toggle" id="theme-toggle">dark mode</button>
+		<section class="container">
+			<h1>Davian Hernandez</h1>
+			<p class="tagline">CSC210 Student</p>
+		</section>
+	</header>
+
+	<!--HTML5 Semantic Navigation-->
+	<nav role="navigation" aria-label="Main navigation">
+		<section class="container">
+			<ul>
+				<li><a href="index.html" area-describedby="index-desc">About Me</a></li>
+				<li><a href="interest.html" area-describedby="interest-desc">My Interest</a></li>
+				<li><a href="favorite.html" area-describedby="favorite-desc">favorite Sites</a></li>
+				<li><a href="plans.html" area-describedby="plans-desc">Future Plans</a></li>
+			</ul>
+		</section>
+	</nav>
+	<main id="Main-content" role="Main">
+		<section class="content-wrapper">
+			<section id="plans" class="section-box" aria-labelledby="plans-heading">
+				<h2 id="plans-heading">My future plans</h2>
+				<section class="plans-content">
+					<h3>"We all make choices in life, but in the end our choices make us." -Andrew Ryan From BioShock
+					</h3>
+					<p> I have put a lot of thought into my life after graduation, I have thought of situations ranging
+						from Military service to coding for banks and government contracts. The military has become more
+						and more unappealing as I grow, and I would be lucky to code and work for the government. But
+						what I have become more and more interested in is banking and the financial field as a whole.
+						They pay great and I would be able to do it remotely. I would just have to worry about
+						staying updated with the newest and greatest coding languages. This isn't terrible for me
+						especially because I enjoy learning new coding concepts. I plan on learning for my entire life.
+					</p>
+					<p>
+						This is all vegue becuase I honestly dont know what the future holds. I just want a job that
+						pays good enough that I can live comfortably and do things I enjoy. If I can do those two things
+						and not have to worry about an unexpected expense making me go into the negative then I will be
+						happy. If a job takes me out of the country or out of the state or anything I will do it. I am
+						not really tied to a state or anyone, I am free to go where I want.
+					</p>
+				</section>
+				<img src="plane.png" alt="image of a city outside a plane window">
+			</section>
+		</section>
+	</main>
+	<footer id="banner">
+		<section class="container">
+			<h1>Copyright ©2025 by Davian Hernandez</h1>
+		</section>
+	</footer>
+	<script src="main.js"></script>
+</body>

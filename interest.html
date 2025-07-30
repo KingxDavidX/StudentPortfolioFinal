@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="CSC210 - Intro to Web Presentation and Development">
+	<meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+
+	<!-- The OG here means Open Graph, which tags control for social media channels. -->
+	<meta property="og:title" content="CSC210 - Intro to Web Presentation and Development">
+	<meta property="ogLdescription"
+		content="This could be your personal portfolio to showvace your web dev and project skills">
+	<meta property="og:type" content="website">
+
+	<!-- fav icon goes here -->
+	<link rel="icon" type="image/svg+xml"
+		href="data:image/svg+xml, <svg xmlns='httpL//www.w3.org/2000/svg' viewBox='0 0 100 100>">
+	<link rel="stylesheet" href="style.css">
+
+	<title>Neumont CSC210 - Intro to Web Presentation and Development</title>
+</head>
+
+<body>
+	<a href="index.html" class="skip-link">Skip to main content</a>
+
+	<!--HTML5 semantic header-->
+	<header role="banner">
+		<button class="theme-toggle" id="theme-toggle">dark mode</button>
+		<section class="container">
+			<h1>Davian Hernandez</h1>
+			<p class="tagline">CSC210 Student</p>
+		</section>
+	</header>
+
+	<!--HTML5 Semantic Navigation-->
+	<nav role="navigation" aria-label="Main navigation">
+		<section class="container">
+			<ul>
+				<li><a href="index.html" area-describedby="index-desc">About Me</a></li>
+				<li><a href="interest.html" area-describedby="interest-desc">My Interest</a></li>
+				<li><a href="favorite.html" area-describedby="favorite-desc">favorite Sites</a></li>
+				<li><a href="plans.html" area-describedby="plans-desc">Future Plans</a></li>
+			</ul>
+		</section>
+	</nav>
+
+	<main id="Main-content" role="Main">
+		<section class="content-wrapper">
+			<section id="interest" class="section-box" aria-labelledby="interest-heading">
+				<h2 id="interest-heading">My Interests</h2>
+				<img src="tenor.gif" alt="gif of Frieren flying">
+				<section class="interest-content">
+					<table>
+						<tr>
+							<th>Movies</th>
+							<th>Video Games</th>
+							<th>TV Shows</th>
+						</tr>
+						<tr>
+							<td>How To Train your Dragon</td>
+							<td>The Last Of Us</td>
+							<td>Frieren: Beyond Journey's End</td>
+						</tr>
+						<tr>
+							<td>Avatar</td>
+							<td>Borderlands 2</td>
+							<td>Your Lie in April</td>
+						</tr>
+						<tr>
+							<td>Kpop Demon Hunters</td>
+							<td>Minecraft</td>
+							<td>Violet Evergarden</td>
+						</tr>
+					</table>
+				</section>
+			</section>
+		</section>
+	</main>
+	<footer id="banner">
+		<section class="container">
+			<h1>Copyright ©2025 by Davian Hernandez</h1>
+		</section>
+	</footer>
+	<script src="main.js"></script>
+</body>

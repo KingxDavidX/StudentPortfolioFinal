@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSC210 - Intro to Web Presentation and Development">
+    <meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+
+    <!-- The OG here means Open Graph, which tags control for social media channels. -->
+    <meta property="og:title" content="CSC210 - Intro to Web Presentation and Development">
+    <meta property="ogLdescription"
+        content="This could be your personal portfolio to showvace your web dev and project skills">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Neumont CSC210 - Intro to Web Presentation and Development</title>
+</head>
+
+<body>
+    <!--Skip link for accessibility-->
+    <a href="index.html" class="skip-link">Skip to main content</a>
+
+    <!--HTML5 semantic header-->
+    <header role="banner">
+        <button class="theme-toggle" id="theme-toggle">dark mode</button>
+        <section class="container">
+            <h1>Davian Hernandez</h1>
+            <p class="tagline">CSC210 Student</p>
+        </section>
+    </header>
+
+    <!--HTML5 Semantic Navigation-->
+    <nav role="navigation" aria-label="Main navigation">
+        <section class="container">
+            <ul>
+                <li><a href="index.html" area-describedby="index-desc">About Me</a></li>
+                <li><a href="interest.html" area-describedby="interest-desc">My Interest</a></li>
+                <li><a href="favorite.html" area-describedby="favorite-desc">favorite Sites</a></li>
+                <li><a href="plans.html" area-describedby="plans-desc">Future Plans</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <!-- HTML% Main content -->
+    <main id="main-content" role="main">
+        <section class="content-wrapper">
+            <section id="index" class="section-box" aria-labelledby="index-heading">
+                <h2 id="index-heading">About Me</h2>
+                <img src="Davian.jpg" alt="Image of me with my car">
+                <div class="index-content">
+                    <p>
+                        My name is Davian Hernandez, I was born in Silver City, New Mexico. I was raised in Deming,
+                        New Mexico. I am currently in <strong>Salt Lake City, Utah</strong> for college. I am a
+                        full-time
+                        student at Neumont College of Computer Science. I was brought here because of my passion for
+                        tech.
+                        Ever since I got my first gaming console I wanted to learn how they were built and how they
+                        work.
+                        This led me to learning how to build a PC at <strong>15</strong> and learning to code not long
+                        after.
+                        Now I know how to code in Java, C++, C#, and Python. I am currently in the process of learning
+                        database software. I know how to use SSMS and am currently learning Redis. This is
+                        <strong>NOT</strong>
+                        the end of my studying, I want to learn even more languages and databases.
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="banner">
+        <section class="container">
+            <h1>Copyright ©2025 by Davian Hernandez</h1>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
