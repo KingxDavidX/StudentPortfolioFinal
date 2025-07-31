@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A website to host my portfolio and other things">
+	<meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
+
+	<meta property="og:title" content="A website to host my portfolio and other things">
+	<meta property="ogLdescription" content="This is my personal portfolio to show off projects and things I like">
+	<meta property="og:type" content="website">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>Davian's Portfolio Website</title>
+</head>
+
+<body>
+	<a href="ContactMe.html" class="skip-link">Skip to main content</a>
+
+	<header role="banner">
+		<button class="theme-toggle" id="theme-toggle">dark mode</button>
+		<section class="container">
+			<h1>Davian Hernandez</h1>
+			<p class="tagline">Neumont of Computer Science Student</p>
+		</section>
+	</header>
+
+	<nav role="navigation" aria-label="Main navigation">
+		<section class="container">
+			<ul>
+				<li><a href="index.html" area-describedby="index-desc">Home</a></li>
+				<li><a href="projects.html" area-describedby="favorite-desc">My Projects</a></li>
+				<li><a href="skills.html" area-describedby="projects-desc">My Skills</a></li>
+				<li><a href="contactMe.html" area-describedby="contacts-desc">Contact Me</a></li>
+			</ul>
+		</section>
+	</nav>
+
+	<main id="Main-content" role="Main">
+		<section class="content-wrapper">
+			<section id="favorite" class="section-box" aria-labelledby="favorite-heading">
+				<h2 id="favorite-heading">My Skills</h2>
+				<section class="favorite-content">
+					<li>Java</li>
+					<li>C++</li>
+					<li>C#</li>
+					<li>Python</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>SQL</li>
+					<li>MongoDB</li>
+					<li>Redis</li>
+					<li>Cassandra</li>
+				</section>
+			</section>
+		</section>
+	</main>
+	<footer id="banner">
+		<section class="container">
+			<h1>Copyright ©2025 by Davian Hernandez</h1>
+		</section>
+	</footer>
+	<script src="js/main.js"></script>
+</body>

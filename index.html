@@ -4,67 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CSC210 - Intro to Web Presentation and Development">
+    <meta name="description" content="A website to host my portfolio and other things">
     <meta name="keywords" content="Neumont, CSC210, web dev, web development, student, portfolio, HTML5, CSS3">
 
-    <!-- The OG here means Open Graph, which tags control for social media channels. -->
-    <meta property="og:title" content="CSC210 - Intro to Web Presentation and Development">
-    <meta property="ogLdescription"
-        content="This could be your personal portfolio to showvace your web dev and project skills">
+    <meta property="og:title" content="A website to host my portfolio and other things">
+    <meta property="ogLdescription" content="This is my personal portfolio to show off projects and things I like">
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Neumont CSC210 - Intro to Web Presentation and Development</title>
+    <title>Davian's Portfolio Website</title>
 </head>
 
 <body>
-    <!--Skip link for accessibility-->
-    <a href="index.html" class="skip-link">Skip to main content</a>
+    <a href="ContactMe.html" class="skip-link">Skip to main content</a>
 
-    <!--HTML5 semantic header-->
     <header role="banner">
         <button class="theme-toggle" id="theme-toggle">dark mode</button>
         <section class="container">
             <h1>Davian Hernandez</h1>
-            <p class="tagline">CSC210 Student</p>
+            <p class="tagline">Neumont of Computer Science Student</p>
         </section>
     </header>
 
-    <!--HTML5 Semantic Navigation-->
     <nav role="navigation" aria-label="Main navigation">
         <section class="container">
             <ul>
-                <li><a href="index.html" area-describedby="index-desc">About Me</a></li>
-                <li><a href="interest.html" area-describedby="interest-desc">My Interest</a></li>
-                <li><a href="favorite.html" area-describedby="favorite-desc">favorite Sites</a></li>
-                <li><a href="plans.html" area-describedby="plans-desc">Future Plans</a></li>
+                <li><a href="index.html" area-describedby="index-desc">Home</a></li>
+                <li><a href="projects.html" area-describedby="favorite-desc">My Projects</a></li>
+                <li><a href="skills.html" area-describedby="projects-desc">My Skills</a></li>
+                <li><a href="contactMe.html" area-describedby="contacts-desc">Contact Me</a></li>
             </ul>
         </section>
     </nav>
 
-    <!-- HTML% Main content -->
     <main id="main-content" role="main">
         <section class="content-wrapper">
             <section id="index" class="section-box" aria-labelledby="index-heading">
-                <h2 id="index-heading">About Me</h2>
-                <img src="images/Davian.jpg" alt="Image of me with my car">
-                <div class="index-content">
-                    <p>
-                        My name is Davian Hernandez, I was born in Silver City, New Mexico. I was raised in Deming,
-                        New Mexico. I am currently in <strong>Salt Lake City, Utah</strong> for college. I am a
-                        full-time
-                        student at Neumont College of Computer Science. I was brought here because of my passion for
-                        tech.
-                        Ever since I got my first gaming console I wanted to learn how they were built and how they
-                        work.
-                        This led me to learning how to build a PC at <strong>15</strong> and learning to code not long
-                        after.
-                        Now I know how to code in Java, C++, C#, and Python. I am currently in the process of learning
-                        database software. I know how to use SSMS and am currently learning Redis. This is
-                        <strong>NOT</strong>
-                        the end of my studying, I want to learn even more languages and databases.
-                    </p>
+                <h2 id="index-heading">Daily Quote and Favorite Tarkov Weapons</h2>
+                <div id="quote"></div>
+                <div id="slideshow">
+                    <img id="slide-image" src="images/slide1.png" alt="Slideshow image">
                 </div>
             </section>
         </section>
@@ -76,6 +56,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
-
-</html>
